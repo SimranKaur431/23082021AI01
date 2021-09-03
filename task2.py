@@ -1,14 +1,12 @@
-s='ssiieeedsf'
+s='ssii'
 c={i:s.count(i) for i in s}
 d=list(set(c.values()))
 
 for i in range(len(d)):
-   if len(d)==1 :
+   if len(d)==1 or len(d)==2 :
       print("yes")
-   elif len(d)==2:
-      if d[0]<d[1]:
-        print("yes")
-        break
+      break
+   
    else:
        print('no')
        break
