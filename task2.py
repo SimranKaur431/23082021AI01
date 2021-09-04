@@ -1,12 +1,8 @@
-s='ssii'
+s='ssiieeefefd'
 c={i:s.count(i) for i in s}
 d=list(set(c.values()))
-
-for i in range(len(d)):
-   if len(d)==1 or len(d)==2 :
-      print("yes")
-      break
-   
-   else:
-       print('no')
-       break
+if len(d)==1 or len(d)==2 :
+   print("My String")
+else:
+   print('Not my string')
+      
